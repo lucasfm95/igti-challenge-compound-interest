@@ -1,0 +1,45 @@
+.container {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    border: 1px solid #ddd;
+    width: 120px;
+    border-radius: 4%;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.span {
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.infoRed {
+    color: red;
+}
+
+.infoOrange {
+    color: orange;
+}
+
+.infoGreen {
+    color: green;
+}
+
+.infoBlue {
+    color: blue;
+}
+

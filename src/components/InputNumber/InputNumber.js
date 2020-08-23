@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import css from './input-number.module.css';
 
-export default function InputNumber() {
+export default function InputNumber({ label, step, value, min, max, onChangeInput }) {
+
+    const handleInputChange = (event) => {
+        onChangeInput(+event.target.value);
+    }
 
     return (
-        <div className="input-field col s6">
-            <input id="last_name" type="number" class="validate" />
-            <label for="last_name">Last Name</label>
+        <div className={css.inputNumber}>
+            <span>{label}:</span>
+            <input type="number" step={step} value={value} onChange={handleInputChange} min={min} max={max} />
         </div>
     )
 }
